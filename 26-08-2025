@@ -1,0 +1,13 @@
+<aside>- conteudo secundario 
+<main>- conteudo principal
+<h1> a <h6>- titulos
+<br>- quebra de linha 
+<code>- formata para estilo de codigo 
+<backgroud color>- cor do fundo da pagina
+border color - cor da borda 
+border width - tamanho da borda 
+border style - estilo da borda
+footer - rodape
+<p> - paragrafo
+
+não esquecer de fechar sempre com </*tag*>
