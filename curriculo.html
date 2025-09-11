@@ -7,10 +7,10 @@
     <title>Currículo - Exemplo</title>
 </head>
 <!-- Aplicando cor de fundo diretamente no body(vai ficar na pagina toda!) -->
-<body style="background-color: #3c3b3b; font-family: Arial, sans-serif;">
+<body style="background-color: #cfcccc; font-family: Arial, sans-serif;">
 
     <!-- Conteúdo Principal -->
-    <main style="border-style: solid; border-width: 2px; border-color: black; padding: 20px; background-color: white;">
+    <main style="border-style: solid; border-width: 4px; border-color: black; padding: 20px; background-color: white;">
 
         <!-- Título principal -->
         <h1>Currículo de Pedro Alvares</h1>
@@ -44,13 +44,15 @@
 
         <h2>Exemplo de Código</h2>
         <p>Um simples "Hello World" em Java:</p>
-        <code>
-             <span style="color:blue;">public</span> class HelloWorld{ <br>
-            &nbsp; <span style="color:blue;">public static void</span> main(String[]args){<br>
-            &nbsp;&nbsp; System.out.println(<span style="color:rgb(182, 110, 52);">"Hello World!"</span>);<br>
-            &nbsp; }<br>
+
+        <!-- Bloco de código estilizado -->
+        <div style="background-color: #302d3b; color: white; padding: 15px; border-radius: 8px; border: 1px solid #555; font-family: monospace;">
+            <span style="color: #569cd6;">public</span> class HelloWorld { <br>
+            &nbsp;&nbsp;<span style="color: #569cd6;">public static void</span> main(String[] args) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span style="color: #ce9178;">"Hello World!"</span>);<br>
+            &nbsp;&nbsp;}<br>
             }
-        </code>
+        </div>
 
     </main>
 
@@ -63,7 +65,7 @@
 
     <!-- Rodapé -->
     <footer style="margin-top: 20px; text-align: center; background-color: #ddd; padding: 10px;">
-        <p></p>
+        <p>Fim do Currículo</p>
     </footer>
 
 </body>
