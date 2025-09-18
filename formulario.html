@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formulários</title>
+</head>
+<body>
+    
+    <form action="resultado.html" method="get">
+        <div>
+            <!-- tag label: rótulo do campo -->
+            <!-- for: foco no respectivo campo através do ID(exclusivo do label)-->
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome"/>
+            
+            <div>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" min="18" max="20" >
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="datanasc">Data de nascimento</label>
+                <input type="date" id="datanasc">
+            </div>
+            <div>
+                <label for="cor">Selecione a cor</label>
+                <input type="color" id="cor">
+            </div>
+            <div>
+                <label for="checkbox">Selecione:</label>
+                <input type="checkbox" id="checkbox">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
