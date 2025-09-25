@@ -1,72 +1,126 @@
 <!DOCTYPE html>
-<!-- define o idioma que vai ser usado no site-->
 <html lang="pt-BR">
 <head>
-    <!-- especifica a codificação de caracteres, se pode ter 'ç' acentos, e etc-->
     <meta charset="UTF-8">
     <title>Currículo - Exemplo</title>
+    <style>
+        body {
+            background-color: #cfcccc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .conteudo {
+            flex: 3;
+            border: 4px solid black;
+            padding: 20px;
+            background: white;
+        }
+        aside {
+            flex: 1;
+            border: 2px dashed gray;
+            padding: 10px;
+            background: #fafafa;
+            height: fit-content;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #ddd;
+            padding: 10px;
+        }
+        .codigo {
+            background-color: #302d3b;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #555;
+            font-family: monospace;
+        }
+    </style>
 </head>
-<!-- Aplicando cor de fundo diretamente no body(vai ficar na pagina toda!) -->
-<body style="background-color: #cfcccc; font-family: Arial, sans-serif;">
-
-    <!-- Conteúdo Principal -->
-    <main style="border-style: solid; border-width: 4px; border-color: black; padding: 20px; background-color: white;">
-
-        <!-- Título principal -->
+<body>
+    <header>
         <h1>Currículo de Pedro Alvares</h1>
-        <br> <!-- Quebra de linha -->
-        
-        <!-- Subtítulos com h2, h3 etc. -->
-        <h2>Informações Pessoais</h2>
-        <p><strong>Endereço:</strong> Rua das Flores, 123 - São Paulo/SP</p>
-        <p><strong>Email:</strong> imperadoralvares@gmail.com</p>
-        <p><strong>Telefone:</strong> (11) 0709-1821</p>
-        <br>
+    </header>
 
-        <h2>Formação Acadêmica</h2>
-        <h3>Ensino Superior</h3>
-        <p>Bacharelado em Analise e Desenvolvimento de Sistemas - Universidade Xyrus (2018 - 2022)</p>
-        <br>
+    <nav>
+        <a href="curriculo.html">Home</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
-        <h2>Experiência Profissional</h2>
-        <h3>Desenvolvedor Front-End</h3>
-        <p>Empresa ABC - 2022 até o momento</p>
-        <p>Atividades: Desenvolvimento de páginas web com HTML, CSS e JavaScript.</p>
-        <br>
+    <main>
+        <div class="conteudo">
+            <h2>Informações Pessoais</h2>
+            <p><strong>Nome:</strong> Pedro Alvares</p>
+            <p><strong>Endereço:</strong> Rua das Flores, 123 - São Paulo/SP</p>
+            <br>
 
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML, CSS e JavaScript</li>
-            <li>Java</li>
-            <li>Banco de Dados SQL</li>
-        </ul>
-        <br>
+            <h2>Formação Acadêmica</h2>
+            <h3>Ensino Superior</h3>
+            <p>Bacharelado em Analise e Desenvolvimento de Sistemas - Universidade Xyrus (2018 - 2022)</p>
+            <br>
 
-        <h2>Exemplo de Código</h2>
-        <p>Um simples "Hello World" em Java:</p>
+            <h2>Experiência Profissional</h2>
+            <h3>Desenvolvedor Front-End</h3>
+            <p>Empresa ABC - 2022 até o momento</p>
+            <p>Atividades: Desenvolvimento de páginas web com HTML, CSS e JavaScript.</p>
+            <br>
 
-        <!-- Bloco de código estilizado -->
-        <div style="background-color: #302d3b; color: white; padding: 15px; border-radius: 8px; border: 1px solid #555; font-family: monospace;">
-            <span style="color: #569cd6;">public</span> class HelloWorld { <br>
-            &nbsp;&nbsp;<span style="color: #569cd6;">public static void</span> main(String[] args) {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span style="color: #ce9178;">"Hello World!"</span>);<br>
-            &nbsp;&nbsp;}<br>
-            }
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, CSS e JavaScript</li>
+                <li>Java</li>
+                <li>Banco de Dados SQL</li>
+            </ul>
+            <br>
+
+            <h2>Exemplo de Código</h2>
+            <p>Um simples "Hello World" em Java:</p>
+
+            <div class="codigo">
+                <span style="color: #569cd6;">public</span> class HelloWorld { <br>
+                &nbsp;&nbsp;<span style="color: #569cd6;">public static void</span> main(String[] args) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span style="color: #ce9178;">"Hello World!"</span>);<br>
+                &nbsp;&nbsp;}<br>
+                }
+            </div>
         </div>
 
+        <aside>
+            <h4>Informações Adicionais</h4>
+            <p>Disponibilidade para viagens e mudanças.</p>
+            <p>CNH: Categoria B</p>
+        </aside>
     </main>
 
-    <!-- Conteúdo Secundário (aside) -->
-    <aside style="margin-top: 20px; border-style: dashed; border-width: 2px; border-color: gray; padding: 10px; background-color: #fafafa;">
-        <h4>Informações Adicionais</h4>
-        <p>Disponibilidade para viagens e mudanças.</p>
-        <p>CNH: Categoria B</p>
-    </aside>
-
-    <!-- Rodapé -->
-    <footer style="margin-top: 20px; text-align: center; background-color: #ddd; padding: 10px;">
-        <p>Fim do Currículo</p>
+    <footer>
     </footer>
-
 </body>
 </html>
